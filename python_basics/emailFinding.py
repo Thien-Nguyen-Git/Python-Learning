@@ -13,13 +13,13 @@
 
 
 # continue example
-# numbers=[2,4,3,11,8]
-# for i in numbers:
-#     print('currewnt number is ',i)
-#     if i > 10:
-#         continue
-#     square = i * i
-#     print('square of i is ',square)
+numbers=[2,4,3,11,8]
+for i in numbers:
+    print('currewnt number is ',i)
+    if i > 10:
+        continue
+    square = i * i
+    print('square of i is ',square)
 
 
 # find output
