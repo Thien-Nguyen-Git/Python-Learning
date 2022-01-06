@@ -6,7 +6,7 @@ def sentence_maker(phrase):
     else:
         return "{}.".format(capitalized)
 
-print(sentence_maker("how are you"))
+# print(sentence_maker("how are you"))
 
 results = []
 while True:
