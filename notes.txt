@@ -1,0 +1,122 @@
+what is dictionary in python?
+    dictionary represent pairs of keys and values
+    phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+    volcano_elevations = {"Glacier Peak": 3213.9, "Rainer": 4392.1}
+student_grades = [9.1, 8.8, 7.5]
+    9.1 = is a single item
+student_grades = {"Marry": 9.1, "Sim": 8.8, "John": 7.5}
+    "Marry": 9.1 = is a single item
+
+keys of a dictionary can be extracted with
+    phone_numbers.keys()
+
+values of a dictionary can be extracted with
+    phone_numbers.values()
+
+Tuples represent arrays of values that are not to be changed during the course of the program
+    vowels = ('a', 'e', 'i', 'o', 'u')
+    one_digits = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+Tuples are immutable
+    monday_temperatures1 = (1, 4, 5)
+
+List represent arrays of values that may change during the course of the program
+    members = ["Sim Soony", "Marry Roundknee", "Jack Corridor"]
+    pixel_values = [252, 251, 251, 253, 250, 248, 247]
+List are mutable
+    monday_temperatures2 = [1, 4, 5]
+    can use monday_temperatures2.append(6)
+
+
+
+---------------------------------------------------------------
+>>> monday_temperatures = [9.1, 8.8, 7.5]
+>>> monday_temperatures                  
+[9.1, 8.8, 7.5]
+>>> monday_temperatures.index(8.8)
+1   
+>>> monday_temperatures.index(8.8, 2) 
+Traceback (most recent call last):   
+  File "<stdin>", line 1, in <module>
+ValueError: 8.8 is not in list       
+>>> monday_temperatures.__getitem__(1)
+8.8 
+>>> monday_temperatures[1]             
+8.8
+>>>
+
+>>> monday_temperatures = [9.1, 8.8, 7.5]
+>>> monday_temperatures[3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> monday_temperatures = [9.1, 8.8, 7.5, 6.6, 9.9]
+>>> monday_temperatures[3]
+6.6
+>>> monday_temperatures[1:4]
+[8.8, 7.5, 6.6]
+>>> monday_temperatures[0:2]
+[9.1, 8.8]
+>>> monday_temperatures[:2]
+[9.1, 8.8]
+>>> monday_temperatures[4]  
+9.9
+>>> monday_temperatures[-1] 
+9.9
+>>> monday_temperatures[-4:-2] 
+[8.8, 7.5]
+>>> mystring = 'hello'
+>>> mystring[1]       
+'e'
+>>> mystring[-1] 
+'o'
+>>> mystring[:3] 
+'hel'
+>>> mystring[0]  
+'h'
+>>> monday_temperatures = ['hello', 1, 2, 3]
+>>> monday_temperatures[0]                  
+'hello'
+>>> monday_temperatures[0][2]
+'l'
+---------------------------------------------------------------
+
+
+
+to print values as an integer
+or change their type use
+    Use isinstance(color, int) to check for type.
+
+
+---------------------------------------------------------------
+You can combine a dictionary for loop with string formatting to create text containing information from the dictionary:
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+for pair in phone_numbers.items():
+    print("{} has as phone number {}".format(pair[0], pair[1]))
+
+
+Another (better) way to do it::
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+for key, value in phone_numbers.items():
+    print("{} has as phone number {}".format(key, value))
+
+
+In both cases the output is:
+Output:
+
+John Smith has as phone number +37682929928
+Marry Simpons has as phone number +423998200919
+---------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
